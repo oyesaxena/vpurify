@@ -1,0 +1,8 @@
+<% services.forEach( function (service){ %>
+    <h4><%= service.name %></h4>
+    <h4><%= service.phone %></h4>
+    <h5><%= service.email %></h5>
+    <form method="POST" action="/verified">
+        <button type="submit" value="submit">Verify</button>
+    </form>
+<% } )%>
